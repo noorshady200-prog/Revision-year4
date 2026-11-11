@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مراجعة اللغة العربية – الصف الثالث</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Fredoka:wght@400;600&display=swap">
+<style>
+:root{--bg:#fff6dc;--card:#fff;--ink:#2b2350;--mute:#6b6590;--line:#eadfc0;--ok:#12a36b;--okbg:#dcfbe9;--no:#e5383b;--nobg:#ffe3e3;
+--c1:#ff4f8b;--c2:#f5a300;--c3:#16b8a6;--c4:#4361ee;--c5:#8338ec;--c6:#fb6f1c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1838;--card:#2a2658;--ink:#fff4d6;--mute:#b9b3e0;--line:#3d3877;--okbg:#0f3d2e;--nobg:#4a1f27}}
+:root[data-theme="dark"]{--bg:#1b1838;--card:#2a2658;--ink:#fff4d6;--mute:#b9b3e0;--line:#3d3877;--okbg:#0f3d2e;--nobg:#4a1f27}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 Cairo,Tahoma,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{text-align:center;padding:22px 14px 8px;background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c5));color:#fff}
+header h1{margin:0;font-weight:900;font-size:clamp(24px,5vw,38px);text-shadow:0 2px 0 rgba(0,0,0,.18)}
+header .e{font:600 16px Fredoka,sans-serif;direction:ltr;opacity:.95}
+.bar{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;padding:10px 0 12px}
+.chip{background:#fff;color:#2b2350;border:0;border-radius:99px;padding:4px 16px;font:700 16px Cairo,sans-serif;cursor:pointer}
+.prog{width:min(260px,60vw);height:12px;background:rgba(255,255,255,.4);border-radius:9px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:#fff;transition:width .4s}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;gap:8px;overflow-x:auto;padding:10px 12px;background:var(--bg);border-bottom:2px dashed var(--line)}
+nav button{flex:none;border:0;border-radius:18px;padding:6px 16px;background:var(--card);color:var(--ink);font:700 16px Cairo,sans-serif;cursor:pointer;box-shadow:inset 0 0 0 3px var(--c);line-height:1.3;text-align:center}
+nav button small{display:block;font:400 12px Fredoka,sans-serif;direction:ltr}
+nav button.on{background:var(--c);color:#fff}
+main{max-width:860px;margin:0 auto;padding:14px 12px 60px}
+section{display:none}section.on{display:block}
+.note{background:var(--nobg);border-radius:14px;padding:8px 14px;margin:10px 0;font-size:15px;display:none}
+.psg{background:var(--card);border:4px solid var(--c);border-radius:26px;padding:14px 16px;margin:12px 0}
+.psg h2{margin:0 0 6px;color:var(--c);font-weight:900}
+.ln{padding:6px 10px;border-radius:14px;cursor:pointer;border-inline-start:5px solid transparent}
+.ln.hl{background:color-mix(in srgb,var(--c) 18%,transparent);border-inline-start-color:var(--c)}
+.ar{margin:0;font-size:1.25em;font-weight:700;line-height:2}
+.en{margin:0;direction:ltr;text-align:left;font:400 15px/1.5 Fredoka,sans-serif;color:var(--mute)}
+.btn{border:0;border-radius:99px;padding:5px 16px;margin:4px 3px;font:700 15px Cairo,sans-serif;color:#fff;background:var(--c);cursor:pointer}
+.btn.alt{background:var(--c4)}
+.sp{border:0;background:none;font-size:1em;cursor:pointer;padding:0 4px}
+.blk{margin:26px 0 8px;padding:8px 16px;border-radius:18px;background:var(--c);color:#fff}
+.blk b{display:block;font-size:1.05em}.blk span{font:600 14px Fredoka,sans-serif;direction:ltr;display:block;text-align:left}
+.q{background:var(--card);border-radius:20px;padding:12px 14px;margin:10px 0;border:3px solid var(--line);display:flex;gap:10px;flex-wrap:wrap}
+.q.ok{border-color:var(--ok);background:var(--okbg)}
+.q.shake{animation:sh .35s}
+@keyframes sh{25%{transform:translateX(7px)}75%{transform:translateX(-7px)}}
+@media (prefers-reduced-motion:reduce){.q.shake{animation:none}}
+.n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font-weight:900}
+.qb{flex:1;min-width:0}
+.bl{display:inline-block;min-width:3.2em;border-bottom:4px dotted var(--c);margin:0 4px}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px;margin-top:8px;width:100%}
+.op{position:relative;border:3px solid var(--line);background:var(--bg);color:var(--ink);border-radius:16px;padding:6px 8px;cursor:pointer;font:700 18px Cairo,sans-serif;text-align:center}
+.op:hover:not(:disabled){border-color:var(--c)}
+.op .oe{display:block;font:400 13px Fredoka,sans-serif;color:var(--mute);direction:ltr}
+.op .mk{position:absolute;top:2px;inset-inline-start:8px;font-weight:900}
+.op.good{background:var(--ok);border-color:var(--ok);color:#fff}.op.good .oe{color:#e8fff3}
+.op.bad{background:var(--no);border-color:var(--no);color:#fff;opacity:.9}.op.bad .oe{color:#ffe3e3}
+.op:disabled:not(.good):not(.bad){opacity:.55}
+.row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px;width:100%}
+input,textarea{flex:1;min-width:160px;border:3px solid var(--line);border-radius:14px;padding:6px 12px;font:700 18px Cairo,sans-serif;background:var(--bg);color:var(--ink)}
+textarea{width:100%;min-height:110px}
+input:focus,textarea:focus{outline:3px solid var(--c);border-color:var(--c)}
+.fb{width:100%;margin:6px 0 0;font-weight:700}.fb small{font:400 13px Fredoka,sans-serif;color:var(--mute);margin-inline-start:6px}
+.md{display:none;width:100%;margin-top:8px;border-radius:14px;padding:8px 12px;background:color-mix(in srgb,var(--c2) 22%,transparent);border:2px dashed var(--c2)}
+.md.on{display:block}
+.help{display:flex;flex-wrap:wrap;gap:6px;width:100%}.help button{border:2px solid var(--c);background:var(--card);color:var(--ink);border-radius:99px;padding:0 12px;font:700 15px Cairo,sans-serif;cursor:pointer}
+.rub{width:100%;font-size:14px;color:var(--mute);margin:4px 0}.rub li{margin:0}
+.done{display:none;text-align:center;margin:20px 0;padding:16px;border-radius:24px;background:var(--c3);color:#fff;font-weight:900;font-size:1.3em}
+:focus-visible{outline:3px solid var(--c5);outline-offset:2px}
+</style>
+</head>
+<body>
+<header>
+<h1>🌈 مراجعة اللغة العربية – الصف الثالث</h1>
+<div class="e" style="font-size:20px;font-weight:600">Prepared by: Teacher Nouran</div>
+<div class="e">Arabic Revision – Grade 3 – Term 1 (2025–2026)</div>
+<div class="bar">
+<button class="chip" id="vt" aria-pressed="true">🔊 صوت المعلمة: يعمل · Teacher voice: ON</button>
+<span class="chip" id="sc">⭐ 0 / 0</span>
+<div class="prog" aria-hidden="true"><i id="pg"></i></div>
+</div>
+</header>
+<nav id="nav" aria-label="الدروس"></nav>
+<main>
+<div id="app"></div>
+<div class="done" id="dn">🎉 أَحْسَنْتَ! أَنْهَيْتَ كُلَّ الأَسْئِلَةِ · You finished everything!</div>
+</main>
+<script>
+/* ---------- helpers ---------- */
+const N=s=>s.replace(/[\u064B-\u0652\u0670\u0640]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/[^\u0621-\u064A\s]/g," ").replace(/\s+/g," ").trim();
+const NW=s=>N(s).replace(/(^| )ال/g,"$1").replace(/ا( |$)/g,"$1");
+const tf=(q,e,v)=>({t:"mc",q,e,o:["صَحّ ✓=True","خَطَأ ✗=False"],c:v?0:1});
+const mc=(q,e,o,c)=>({t:"mc",q,e,o,c});
+const qa=(q,e,m,me,k)=>({t:"in",q,e,m,me,k});
+const ex=(n,a,v,p)=>[["اسْمًا","a noun",n],["صِفَةً","an adjective",a],["فِعْلًا","a verb",v],["حَرْفَ جَرٍّ","a preposition",p]].map(([q,e,l])=>({t:"in",q:q+" :",e:"Extract "+e,a:l.split(" "),m:l.split(" ").slice(0,4).join(" – "),me:"examples / أمثلة"}));
+const PR=["أَنَا=I","هُوَ=he","هِيَ=she","نَحْنُ=we"],DH=["هَذَا=this (m.)","هَذِهِ=this (f.)"],FM=["فِي=in","مِنَ=from / of"],QW=["مَتَى=when","مَاذَا=what","كَيْفَ=how","مَا=what / what is","أَيْنَ=where"];
+const RUB=["المحتوى: التحدث بوضوح عن الموضوع · Content: speak clearly about the topic","المفردات: خمس كلمات على الأقل من الكلمات المساعدة · Vocabulary: at least 5 help words","التراكيب: جمل بسيطة وصحيحة · Structures: simple, correct sentences","الربط: ترتيب الأفكار وأدوات الربط (و، لأنّ، بينما) · Linking: order + connectors","الإملاء والخط: كتابة صحيحة وواضحة · Spelling and handwriting"];
+/* ---------- content ---------- */
+const S=[
+{n:"ملابسي المفضلة",e:"My Favourite Clothes",i:"👕",c:"--c1",
+p:{h:"ملابسي المفضلة",l:[
+["مَرْحَبًا، أَنَا اسْمِي مُحَمَّدٌ،","Hello, my name is Mohamed."],
+["مَدْرَسَتِي جِيمْس كَامْبْرِيدْج، أَنَا فِي الصَّفِّ الثَّالِثِ،","My school is James Cambridge. I am in Grade 3."],
+["أَنَا أُحِبُّ الْمَلَابِسَ الْجَمِيلَةَ وَالْمُرِيحَةَ،","I love beautiful and comfortable clothes."],
+["مَلَابِسِي الْمُفَضَّلَةُ هي قَمِيصٌ أَزْرَقُ وَبِنْطَالٌ أَسْوَدُ،","My favourite clothes are a blue shirt and black trousers."],
+["فِي الصَّيْفِ، أَنَا أَرْتَدِي مَلَابِسَ خَفِيفَةً مِنَ الْقُطْنِ، مِثْلَ الْقَمِيصِ وَأَلْبَسُ قُبَّعَةً،","In summer I wear light cotton clothes, like the shirt, and I wear a hat."],
+["وَفِي الشِّتَاءِ أَرْتَدِي مَلَابِسَ ثَقِيلَةً، مِثْلَ الْمِعْطَفِ وَأَلْبَسُ وِشَاحًا مِنَ الصُّوفِ،","In winter I wear heavy clothes, like the coat, and I wear a wool scarf."],
+["أَنَا أُفَضِّلُ أَنْ أَلْبَسَ مَلَابِسَ مِنَ الْقُطْنِ لِأَنَّهَا مُرِيحَةٌ جِدًّا.","I prefer to wear cotton clothes because they are very comfortable."]]},
+b:[
+{h:"[أ] اسْتَخْرِجْ مِنَ الْفِقْرَةِ",e:"[A] Extract from the paragraph",it:ex("محمد مدرسة الصف الملابس قميص بنطال قبعة معطف وشاح القطن الصوف الصيف الشتاء","الجميلة المريحة أزرق أسود خفيفة ثقيلة مريحة","أحب أرتدي ألبس أفضل","في من")},
+{h:"[ب] صَحّ (✓) أَمْ خَطَأ (✗)؟",e:"[B] True or false?",it:[
+tf("اسْمُ الْمُتَحَدِّثِ فِي الْفِقْرَةِ هُوَ خَالِدٌ.","The speaker’s name in the paragraph is Khaled.",0),
+tf("يُحِبُّ مُحَمَّدٌ الْمَلَابِسَ الْمُرِيحَةَ.","Mohamed loves comfortable clothes.",1),
+tf("يَرْتَدِي مُحَمَّدٌ مَلَابِسَ ثَقِيلَةً فِي الصَّيْفِ.","Mohamed wears heavy clothes in summer.",0),
+tf("يَلْبَسُ مُحَمَّدٌ وِشَاحًا مِنَ الصُّوفِ فِي الشِّتَاءِ.","Mohamed wears a wool scarf in winter.",1),
+tf("يُفَضِّلُ مُحَمَّدٌ مَلَابِسَ الْقُطْنِ لِأَنَّهَا مُرِيحَةٌ.","Mohamed prefers cotton clothes because they are comfortable.",1)]},
+{h:"[ج] اخْتَرِ الإِجَابَةَ الصَّحِيحَةَ",e:"[C] Choose the correct answer",it:[
+mc("مَاذَا يَرْتَدِي مُحَمَّدٌ فِي الصَّيْفِ؟","What does Mohamed wear in summer?",["مَلَابِسَ خَفِيفَةً=light clothes","مَلَابِسَ ثَقِيلَةً=heavy clothes","مِعْطَفًا=a coat","وِشَاحًا=a scarf"],0),
+mc("مَتَى يَرْتَدِي مُحَمَّدٌ الْمِعْطَفَ؟","When does Mohamed wear the coat?",["فِي الصَّيْفِ=in summer","فِي الشِّتَاءِ=in winter","فِي الرَّبِيعِ=in spring","فِي الْخَرِيفِ=in autumn"],1),
+mc("لِمَاذَا يُفَضِّلُ مُحَمَّدٌ مَلَابِسَ الْقُطْنِ؟","Why does Mohamed prefer cotton clothes?",["لِأَنَّهَا مُرِيحَةٌ=because they are comfortable","لِأَنَّهَا ثَقِيلَةٌ=because they are heavy","لِأَنَّهَا سَوْدَاءُ=because they are black","لِأَنَّهَا صُوفِيَّةٌ=because they are woolen"],0),
+mc("فِي أَيِّ صَفٍّ يَدْرُسُ مُحَمَّدٌ؟","Which grade is Mohamed in?",["الثَّالِثِ=third","الْأَوَّلِ=first","الثَّانِي=second","الرَّابِعِ=fourth"],0),
+mc("مَا لَوْنُ قَمِيصِ مُحَمَّدٍ الْمُفَضَّلِ؟","What colour is Mohamed’s favourite shirt?",["أَحْمَرُ=red","أَخْضَرُ=green","أَزْرَقُ=blue","أَصْفَرُ=yellow"],2)]},
+{h:"[د] أَجِبْ عَنِ الأَسْئِلَةِ الآتِيَةِ",e:"[D] Answer the questions",it:[
+qa("مَا اسْمُ الْمُتَحَدِّثِ فِي الْفِقْرَةِ؟","What is the speaker’s name?","اسْمُهُ مُحَمَّدٌ.","His name is Mohamed.",["محمد"]),
+qa("مَاذَا يَلْبَسُ مُحَمَّدٌ فِي الصَّيْفِ؟","What does Mohamed wear in summer?","يَلْبَسُ مَلَابِسَ خَفِيفَةً مِنَ الْقُطْنِ وَقُبَّعَةً.","He wears light cotton clothes and a hat.",["خفيف"]),
+qa("لِمَاذَا يُفَضِّلُ مُحَمَّدٌ مَلَابِسَ الْقُطْنِ؟","Why does Mohamed prefer cotton clothes?","لِأَنَّهَا مُرِيحَةٌ جِدًّا.","Because they are very comfortable.",["مريح"]),
+qa("مَا مَلَابِسُ مُحَمَّدٍ الْمُفَضَّلَةُ؟","What are Mohamed’s favourite clothes?","قَمِيصٌ أَزْرَقُ وَبِنْطَالٌ أَسْوَدُ.","A blue shirt and black trousers.",["قميص","بنطال"]),
+qa("مَاذَا يَلْبَسُ مُحَمَّدٌ فِي الشِّتَاءِ؟","What does Mohamed wear in winter?","يَلْبَسُ مَلَابِسَ ثَقِيلَةً مِثْلَ الْمِعْطَفِ وَوِشَاحًا مِنَ الصُّوفِ.","He wears heavy clothes like the coat, and a wool scarf.",["ثقيل"])]}]},
+{n:"أنواع الملابس",e:"Types of Clothes",i:"🧥",c:"--c2",
+p:{h:"أنواع الملابس",l:[
+["مَرْحَبًا، أَنَا اسْمِي مُحَمَّدٌ، مَدْرَسَتِي جِيمْس كَامْبْرِيدْج، وَأَنَا فِي الصَّفِّ الثَّالِثِ،","Hello, my name is Mohamed. My school is James Cambridge, and I am in Grade 3."],
+["الْيَوْمَ سَوْفَ أَتَحَدَّثُ عَنْ أَنْوَاعِ الْمَلَابِسِ،","Today I will talk about types of clothes."],
+["فِي الصَّيْفِ أَرْتَدِي مَلَابِسَ خَفِيفَةً، مِثْلَ الْقَمِيصِ وَالْبِنْطَالِ،","In summer I wear light clothes, like the shirt and the trousers."],
+["وَفِي الشِّتَاءِ أَرْتَدِي مَلَابِسَ ثَقِيلَةً، مِثْلَ الْمِعْطَفِ وَالْوِشَاحِ،","In winter I wear heavy clothes, like the coat and the scarf."],
+["أَنَا أُفَضِّلُ أَنْ أَرْتَدِيَ قَمِيصًا أَزْرَقَ وَبِنْطَالًا أَسْوَدَ وَحِذَاءً أَبْيَضَ،","I prefer to wear a blue shirt, black trousers and white shoes."],
+["بَيْنَمَا أُخْتِي تَرْتَدِي فُسْتَانًا أَصْفَرَ وَقُبَّعَةً حَمْرَاءَ،","While my sister wears a yellow dress and a red hat."],
+["فِي رَأْيِي أَنَّ مَلَابِسِي جَمِيلَةٌ وَمُرِيحَةٌ، مَا أَجْمَلَ الْمَلَابِسَ!","In my opinion my clothes are beautiful and comfortable. How beautiful clothes are!"]]},
+b:[
+{h:"[أ] اسْتَخْرِجْ مِنَ الْفِقْرَةِ",e:"[A] Extract from the paragraph",it:ex("محمد مدرسة الصف الملابس قميص بنطال معطف وشاح حذاء أخت فستان قبعة","خفيفة ثقيلة أزرق أسود أبيض أصفر حمراء جميلة مريحة","أتحدث أرتدي أفضل ترتدي","في عن")},
+{h:"[ب] صَحّ (✓) أَمْ خَطَأ (✗)؟",e:"[B] True or false?",it:[
+tf("يَدْرُسُ مُحَمَّدٌ فِي الصَّفِّ الثَّالِثِ.","Mohamed studies in Grade 3.",1),
+tf("يَرْتَدِي مُحَمَّدٌ مَلَابِسَ ثَقِيلَةً فِي الصَّيْفِ.","Mohamed wears heavy clothes in summer.",0),
+tf("يُفَضِّلُ مُحَمَّدٌ قَمِيصًا أَزْرَقَ.","Mohamed prefers a blue shirt.",1),
+tf("تَرْتَدِي أُخْتُ مُحَمَّدٍ فُسْتَانًا أَصْفَرَ.","Mohamed’s sister wears a yellow dress.",1),
+tf("يَرَى مُحَمَّدٌ أَنَّ مَلَابِسَهُ جَمِيلَةٌ وَمُرِيحَةٌ.","Mohamed thinks his clothes are beautiful and comfortable.",1)]},
+{h:"[ج] اخْتَرِ الإِجَابَةَ الصَّحِيحَةَ",e:"[C] Choose the correct answer",it:[
+mc("اسْمُ الْمُتَحَدِّثِ فِي الْفِقْرَةِ هُوَ ▁.","The speaker’s name is ___.",["أَحْمَدُ=Ahmed","سَامِي=Sami","عُمَرُ=Omar","مُحَمَّدٌ=Mohamed"],3),
+mc("مَاذَا يَرْتَدِي مُحَمَّدٌ فِي الصَّيْفِ؟","What does Mohamed wear in summer?",["مَلَابِسَ ثَقِيلَةً=heavy clothes","مِعْطَفًا=a coat","مَلَابِسَ خَفِيفَةً=light clothes","وِشَاحًا=a scarf"],2),
+mc("نَوْعُ الْمَلَابِسِ الَّتِي يَرْتَدِيهَا مُحَمَّدٌ فِي الشِّتَاءِ مَلَابِسُ ▁.","The clothes Mohamed wears in winter are ___ clothes.",["خَفِيفَةٌ=light","رَسْمِيَّةٌ=formal","ثَقِيلَةٌ=heavy","رِيَاضِيَّةٌ=sports"],2),
+mc("مَتَى يَرْتَدِي مُحَمَّدٌ الْمِعْطَفَ وَالْوِشَاحَ؟","When does Mohamed wear the coat and scarf?",["فِي الشِّتَاءِ=in winter","فِي الصَّيْفِ=in summer","فِي الرَّبِيعِ=in spring","فِي الْخَرِيفِ=in autumn"],0)]},
+{h:"[د] أَجِبْ عَنِ الأَسْئِلَةِ الآتِيَةِ",e:"[D] Answer the questions",it:[
+qa("مَنِ الْمُتَحَدِّثُ فِي الْفِقْرَةِ؟","Who is the speaker?","الْمُتَحَدِّثُ هُوَ مُحَمَّدٌ.","The speaker is Mohamed.",["محمد"]),
+qa("مَاذَا يُفَضِّلُ مُحَمَّدٌ أَنْ يَرْتَدِيَ؟","What does Mohamed prefer to wear?","يُفَضِّلُ قَمِيصًا أَزْرَقَ وَبِنْطَالًا أَسْوَدَ وَحِذَاءً أَبْيَضَ.","He prefers a blue shirt, black trousers and white shoes.",["قميص"]),
+qa("مَاذَا تَرْتَدِي أُخْتُ مُحَمَّدٍ؟","What does Mohamed’s sister wear?","تَرْتَدِي فُسْتَانًا أَصْفَرَ وَقُبَّعَةً حَمْرَاءَ.","She wears a yellow dress and a red hat.",["فستان"]),
+qa("مَا الْفَرْقُ بَيْنَ مَلَابِسِ الصَّيْفِ وَمَلَابِسِ الشِّتَاءِ؟","What is the difference between summer and winter clothes?","مَلَابِسُ الصَّيْفِ خَفِيفَةٌ وَمَلَابِسُ الشِّتَاءِ ثَقِيلَةٌ.","Summer clothes are light and winter clothes are heavy.",["خفيف","ثقيل"])]}]},
+{n:"فصل الصيف",e:"The Summer",i:"☀️",c:"--c6",
+p:{h:"فصل الصيف",l:[
+["مَرْحَبًا، أَنَا اسْمِي مُحَمَّدٌ، مَدْرَسَتِي جِيمْس كَامْبْرِيدْج، أَنَا فِي الصَّفِّ الثَّالِثِ،","Hello, my name is Mohamed. My school is James Cambridge. I am in Grade 3."],
+["الْيَوْمَ سَوْفَ أَتَحَدَّثُ عَنْ فَصْلِ الصَّيْفِ،","Today I will talk about the summer season."],
+["فِي الصَّيْفِ يَكُونُ الْجَوُّ حَارًّا وَمُشْمِسًا؛ لِذَلِكَ نَرْتَدِي مَلَابِسَ خَفِيفَةً وَمُرِيحَةً،","In summer the weather is hot and sunny; that is why we wear light and comfortable clothes."],
+["أَرْتَدِي قَمِيصًا أَبْيَضَ وَبِنْطَالًا أَزْرَقَ وَقُبَّعَةً صَفْرَاءَ وَنَظَّارَةً شَمْسِيَّةً،","I wear a white shirt, blue trousers, a yellow hat and sunglasses."],
+["بَيْنَمَا أُخْتِي تَرْتَدِي فُسْتَانًا وَرْدِيًّا جَمِيلًا وَقُبَّعَةً بَيْضَاءَ،","While my sister wears a beautiful pink dress and a white hat."],
+["فِي الْعُطْلَةِ أَذْهَبُ مَعَ أُسْرَتِي إِلَى الشَّاطِئِ، وَأَلْعَبُ مَعَ أُخْتِي بِكُرَةٍ صَغِيرَةٍ،","On holiday I go with my family to the beach, and I play with my sister with a small ball."],
+["فِي رَأْيِي أَنَّ فَصْلَ الصَّيْفِ مُمْتِعٌ جِدًّا.","In my opinion, summer is very enjoyable."]]},
+b:[
+{h:"[أ] اسْتَخْرِجْ مِنَ الْفِقْرَةِ",e:"[A] Extract from the paragraph",it:ex("محمد الصيف الجو ملابس قميص بنطال قبعة نظارة أخت فستان العطلة أسرة الشاطئ كرة","حارا مشمسا خفيفة مريحة أبيض أزرق أصفر وردي جميلا صغيرة ممتع","أتحدث يكون نرتدي أرتدي ترتدي أذهب ألعب","في مع إلى")},
+{h:"[ب] صَحّ (✓) أَمْ خَطَأ (✗)؟",e:"[B] True or false?",it:[
+tf("فِي فَصْلِ الصَّيْفِ يَكُونُ الْجَوُّ بَارِدًا وَمُمْطِرًا.","In summer the weather is cold and rainy.",0),
+tf("نَلْبَسُ فِي الصَّيْفِ مَلَابِسَ خَفِيفَةً وَمُرِيحَةً.","In summer we wear light and comfortable clothes.",1),
+tf("نَرْتَدِي قُبَّعَةً لِتَحْمِيَنَا مِنَ الشَّمْسِ.","We wear a hat to protect us from the sun.",1),
+tf("يَدْرُسُ مُحَمَّدٌ فِي الصَّفِّ الْخَامِسِ.","Mohamed studies in Grade 5.",0),
+tf("نَرْتَدِي مَلَابِسَ ثَقِيلَةً فِي الصَّيْفِ.","We wear heavy clothes in summer.",0),
+tf("تَرْتَدِي أُخْتُهُ فُسْتَانًا وَرْدِيًّا.","His sister wears a pink dress.",1),
+tf("يَلْعَبُ مُحَمَّدٌ مَعَ أُخْتِهِ بِكُرَةٍ صَغِيرَةٍ.","Mohamed plays with his sister with a small ball.",1)]},
+{h:"[ج] اخْتَرِ الإِجَابَةَ الصَّحِيحَةَ",e:"[C] Choose the correct answer",it:[
+mc("الْفِكْرَةُ الرَّئِيسَةُ فِي الْفِقْرَةِ هِيَ ▁.","The main idea of the paragraph is ___.",["فَصْلُ الشِّتَاءِ=winter","فَصْلُ الصَّيْفِ=summer","الْمَدْرَسَةُ=school","الطَّعَامُ=food"],1),
+mc("فِي الصَّيْفِ يَكُونُ الْجَوُّ ▁.","In summer the weather is ___.",["بَارِدًا=cold","مُمْطِرًا=rainy","مُثْلِجًا=snowy","حَارًّا وَمُشْمِسًا=hot and sunny"],3),
+mc("مُحَمَّدٌ يَرْتَدِي قَمِيصًا ▁.","Mohamed wears a ___ shirt.",["أَزْرَقَ=blue","أَصْفَرَ=yellow","أَبْيَضَ=white","أَخْضَرَ=green"],2),
+mc("يَذْهَبُ مُحَمَّدٌ فِي الْعُطْلَةِ إِلَى ▁.","On holiday Mohamed goes to ___.",["الشَّاطِئِ=the beach","السُّوقِ=the market","الْجَبَلِ=the mountain","الْمَدْرَسَةِ=the school"],0),
+mc("يَلْعَبُ مُحَمَّدٌ ▁.","Mohamed plays ___.",["مَعَ مُعَلِّمِهِ=with his teacher","مَعَ صَدِيقِهِ=with his friend","مَعَ أُخْتِهِ=with his sister","مَعَ أَخِيهِ=with his brother"],2)]},
+{h:"[د] أَجِبْ عَنِ الأَسْئِلَةِ الآتِيَةِ",e:"[D] Answer the questions",it:[
+qa("كَيْفَ يَكُونُ الْجَوُّ فِي فَصْلِ الصَّيْفِ؟","How is the weather in summer?","يَكُونُ الْجَوُّ حَارًّا وَمُشْمِسًا.","The weather is hot and sunny.",["حار","مشمس"]),
+qa("مَاذَا تَرْتَدِي أُخْتُهُ؟","What does his sister wear?","تَرْتَدِي فُسْتَانًا وَرْدِيًّا جَمِيلًا وَقُبَّعَةً بَيْضَاءَ.","She wears a beautiful pink dress and a white hat.",["فستان"]),
+qa("مَعَ مَنْ يَذْهَبُ مُحَمَّدٌ إِلَى الشَّاطِئِ؟","Who does Mohamed go to the beach with?","يَذْهَبُ مَعَ أُسْرَتِهِ.","He goes with his family.",["اسر"]),
+qa("لِمَاذَا نَلْبَسُ مَلَابِسَ خَفِيفَةً فِي الصَّيْفِ؟","Why do we wear light clothes in summer?","لِأَنَّ الْجَوَّ حَارٌّ وَمُشْمِسٌ.","Because the weather is hot and sunny.",["حار"]),
+qa("بِمَاذَا تَنْصَحُ صَدِيقَكَ أَنْ يَرْتَدِيَ فِي الصَّيْفِ؟","What do you advise your friend to wear in summer?","أَنْصَحُهُ أَنْ يَرْتَدِيَ مَلَابِسَ خَفِيفَةً وَقُبَّعَةً.","I advise him to wear light clothes and a hat. (Any sensible answer is fine.)",["خفيف"])]}]},
+{n:"القواعد",e:"Grammar",i:"✏️",c:"--c4",b:[
+{h:"أَكْمِلْ بِنَفْسِ النَّمَطِ (أَنَا ← هُوَ / هِيَ)",e:"Complete with the same pattern (I → he / she)",it:[
+["أَنَا أَرْتَدِي ← هُوَ ▁","I wear → he …","يرتدي"],["أَنَا أَرْتَدِي ← هِيَ ▁","I wear → she …","ترتدي"],
+["أَنَا أَشْرَبُ ← هُوَ ▁","I drink → he …","يشرب"],["أَنَا أَشْرَبُ ← هِيَ ▁","I drink → she …","تشرب"],
+["أَنَا أَذْهَبُ ← هُوَ ▁","I go → he …","يذهب"],["أَنَا أَذْهَبُ ← هِيَ ▁","I go → she …","تذهب"],
+["أَنَا أَلْبَسُ ← هُوَ ▁","I wear → he …","يلبس"],["أَنَا أَلْبَسُ ← هِيَ ▁","I wear → she …","تلبس"]].map(([q,e,a])=>({t:"in",q,e,a:[a],m:a,me:"✓"}))},
+{h:"اخْتَرْ (هَذَا) أَوْ (هَذِهِ)",e:"Choose this (m.) or this (f.)",it:[
+mc("▁ مِعْطَفٌ ثَقِيلٌ.","___ is a heavy coat.",DH,0),mc("▁ قُبَّعَةٌ جَمِيلَةٌ.","___ is a beautiful hat.",DH,1),
+mc("▁ قَمِيصٌ أَزْرَقُ.","___ is a blue shirt.",DH,0),mc("▁ مَلَابِسُ مُرِيحَةٌ.","___ are comfortable clothes.",DH,1)]},
+{h:"أَكْمِلْ بِحَرْفِ الْجَرِّ الْمُنَاسِبِ (فِي – مِنَ)",e:"Complete with the correct preposition",it:[
+mc("أَرْتَدِي مِعْطَفًا ▁ الشِّتَاءِ.","I wear a coat ___ winter.",FM,0),mc("هَذَا الْقَمِيصُ ▁ الْقُطْنِ.","This shirt is ___ cotton.",FM,1),
+mc("أَنَا ▁ الصَّفِّ الثَّالِثِ.","I am ___ Grade 3.",FM,0),mc("هَذَا الْوِشَاحُ ▁ الصُّوفِ.","This scarf is ___ wool.",FM,1)]},
+{h:"صِلْ كُلَّ اسْمٍ بِالصِّفَةِ الْمُنَاسِبَةِ",e:"Match each noun with the suitable adjective",it:[
+mc("قَمِيصٌ ⟷","shirt ⟷",["ثَقِيلَةٌ=heavy","أَزْرَقُ=blue","جَمِيلَةٌ=beautiful"],1),
+mc("قُبَّعَةٌ ⟷","hat ⟷",["ثَقِيلَةٌ=heavy","أَزْرَقُ=blue","جَمِيلَةٌ=beautiful"],2),
+mc("مَلَابِسُ الشِّتَاءِ ⟷","winter clothes ⟷",["ثَقِيلَةٌ=heavy","أَزْرَقُ=blue","جَمِيلَةٌ=beautiful"],0)]},
+{h:"اخْتَرِ الضَّمِيرَ الْمُنَاسِبَ",e:"Choose the suitable pronoun",it:[
+mc("▁ أَلْبَسُ قَمِيصًا.","___ wear a shirt.",PR,0),mc("▁ تَلْبَسُ قُبَّعَةً.","___ wears a hat (she).",PR,2),
+mc("▁ يَلْبَسُ مِعْطَفًا.","___ wears a coat (he).",PR,1),mc("▁ نَلْبَسُ مَلَابِسَ خَفِيفَةً.","___ wear light clothes.",PR,3)]},
+{h:"حَوِّلْ كَمَا فِي الْمِثَالِ",e:"Change as in the example:  أَنَا أَلْبَسُ قَمِيصًا ← هُوَ يَلْبَسُ قَمِيصًا",it:[
+{t:"in",q:"أَنَا أَرْتَدِي مِعْطَفًا. ← هُوَ ...",e:"I wear a coat → He …",k:["يرتدي","معطف"],m:"هُوَ يَرْتَدِي مِعْطَفًا.",me:"He wears a coat."},
+{t:"in",q:"أَنَا أُحِبُّ الْمَلَابِسَ الْجَمِيلَةَ. ← هِيَ ...",e:"I love beautiful clothes → She …",k:["تحب","جميل"],m:"هِيَ تُحِبُّ الْمَلَابِسَ الْجَمِيلَةَ.",me:"She loves beautiful clothes."}]},
+{h:"اخْتَرِ الصِّفَةَ الصَّحِيحَةَ",e:"Choose the correct adjective",it:[
+mc("قَمِيصٌ ▁ .","A ___ shirt.",["جَمِيلٌ=beautiful (m.)","جَمِيلَةٌ=beautiful (f.)"],0),
+mc("قُبَّعَةٌ ▁ .","A ___ hat.",["أَزْرَقُ=blue (m.)","زَرْقَاءُ=blue (f.)"],1),
+mc("وِشَاحٌ ▁ .","A ___ scarf.",["ثَقِيلٌ=heavy (m.)","ثَقِيلَةٌ=heavy (f.)"],0)]},
+{h:"أَكْمِلْ بِأَدَاةِ الِاسْتِفْهَامِ الْمُنَاسِبَةِ",e:"[F] Complete with the correct question word",it:[
+mc("▁ اسْمُكَ؟ — أَنَا اسْمِي مُحَمَّدٌ.","___ is your name? — My name is Mohamed.",QW,3),
+mc("▁ تَرْتَدِي؟ — أَرْتَدِي قَمِيصًا أَبْيَضَ.","___ do you wear? — I wear a white shirt.",QW,1),
+mc("▁ تَذْهَبُ؟ — أَذْهَبُ إِلَى الشَّاطِئِ.","___ do you go? — I go to the beach.",QW,4),
+mc("▁ تَذْهَبُ إِلَى الشَّاطِئِ؟ — فِي الْعُطْلَةِ.","___ do you go to the beach? — On holiday.",QW,0),
+mc("▁ يَكُونُ الْجَوُّ؟ — حَارًّا وَمُشْمِسًا.","___ is the weather? — Hot and sunny.",QW,2)]},
+{h:"اخْتَرِ الْمُرَادِفَ الْمُنَاسِبَ",e:"Choose the word with the same meaning",it:[
+mc("أَرْتَدِي = ▁","I wear = ___",["أَلْبَسُ=I wear","أَشْرَبُ=I drink","أَلْعَبُ=I play","أَذْهَبُ=I go"],0),
+mc("جَمِيلَةٌ = ▁","beautiful = ___",["حَسَنَةٌ=nice","ثَقِيلَةٌ=heavy","بَارِدَةٌ=cold","صَغِيرَةٌ=small"],0),
+mc("أُسْرَتِي = ▁","my family = ___",["مَدْرَسَتِي=my school","عَائِلَتِي=my family","مَلَابِسِي=my clothes","قُبَّعَتِي=my hat"],1),
+mc("الْجَوُّ = ▁","the weather = ___",["الْقُطْنُ=cotton","اللَّوْنُ=colour","الطَّقْسُ=weather","الصُّوفُ=wool"],2),
+mc("مُمْتِعٌ = ▁","enjoyable = ___",["أَسْوَدُ=black","ثَقِيلٌ=heavy","بَارِدٌ=cold","مُسَلٍّ=fun"],3)]},
+{h:"حَوِّلْ مِنَ الْمُفْرَدِ إِلَى الْجَمْعِ",e:"Change from singular to plural",it:[
+["قَمِيصٌ","shirt",3],["قُبَّعَةٌ","hat",0],["فُسْتَانٌ","dress",5],["كُرَةٌ","ball",2],["مَدْرَسَةٌ","school",1],["فَصْلٌ","season",4]].map(([w,e,c])=>mc(w+" ← ▁","singular: "+e,["قُبَّعَاتٌ=hats","مَدَارِسُ=schools","كُرَاتٌ=balls","قُمْصَانٌ=shirts","فُصُولٌ=seasons","فَسَاتِينُ=dresses"],c))}]},
+{n:"الإملاء",e:"Spelling",i:"🔤",c:"--c3",b:[
+{h:"اخْتَرِ الْكَلِمَةَ الصَّحِيحَةَ إِمْلَائِيًّا",e:"Choose the correctly spelled word",it:[
+mc("أَرْتَدِي ▁ أَبْيَضَ.","I wear a white shirt.",["قَمِيصًا","قَمِيسًا","كَمِيصًا","قَمِيشًا"],0),
+mc("أَلْبَسُ ▁ أَزْرَقَ.","I wear blue trousers.",["بِنْضَالًا","بِنْطَالًا","بِنْتَالًا","بِنْطَلًا"],1),
+mc("أَضَعُ ▁ عَلَى رَأْسِي.","I put a hat on my head.",["قُبَّعَهً","كُبَّعَةً","قُبَّعَةً","قُبَّعَتً"],2)]},
+{h:"أَكْمِلِ الْكَلِمَةَ بِالْحَرْفِ النَّاقِصِ",e:"Complete each word with the missing letter",it:[
+["أَرْتَدِي قَمِيـ▁ًا أَبْيَضَ.","shirt","ص","س","ش",0],["أَلْبَسُ بِنْـ▁َالًا أَزْرَقَ.","trousers","ت","ط","د",1],
+["أَضَعُ قُبَّـ▁َةً عَلَى رَأْسِي.","hat","غ","ف","ع",2],["أَرْتَدِي مِعْـ▁َفًا فِي الشِّتَاءِ.","coat","ط","ت","ض",0],
+["أَلْبَسُ وِشَا▁ًا مِنَ الصُّوفِ.","scarf","ج","ح","خ",1],["هَذَا الْقَمِيصُ مِنَ الْقُـ▁ْنِ.","cotton","ت","د","ط",0],
+["هَذَا الْوِشَاحُ مِنَ الصُّو▁ِ.","wool","ق","ف","ب",1],["يَكُونُ الْجَوُّ حَارًّا فِي الصَّيْـ▁ِ.","summer","ف","ق","ك",0],
+["أَرْتَدِي مَلَابِسَ ثَقِيلَةً فِي الشِّـ▁َاءِ.","winter","ب","ن","ت",2],["أَلْعَبُ مَعَ أُخْتِي بِكُـ▁َةٍ صَغِيرَةٍ.","ball","ر","ز","د",0],
+["أَذْهَبُ إِلَى الشَّاطِئِ مَعَ أُسْـ▁َتِي.","family","ز","ر","ذ",1],["الْجَوُّ فِي الصَّيْفِ حَارٌّ وَمُشْـ▁ِسٌ.","sunny","ن","ب","م",2]].map(([q,e,a,b,c,k])=>mc(q,"Hint: "+e,[a,b,c],k))}]},
+{n:"الخط والكتابة",e:"Handwriting & Writing",i:"📝",c:"--c5",b:[
+{h:"اِنْسَخِ الْجُمَلَ التَّالِيَةَ",e:"Copy the following sentences",it:[
+{t:"in",q:"أَنَا أَرْتَدِي مَلَابِسَ خَفِيفَةً فِي الصَّيْفِ.",e:"I wear light clothes in summer.",a:["أنا أرتدي ملابس خفيفة في الصيف"],m:"أَنَا أَرْتَدِي مَلَابِسَ خَفِيفَةً فِي الصَّيْفِ.",me:"✓"},
+{t:"in",q:"فِي الصَّيْفِ يَكُونُ الْجَوُّ حَارًّا وَمُشْمِسًا.",e:"In summer the weather is hot and sunny.",a:["في الصيف يكون الجو حارا ومشمسا"],m:"فِي الصَّيْفِ يَكُونُ الْجَوُّ حَارًّا وَمُشْمِسًا.",me:"✓"}]},
+{h:"[جـ] اُكْتُبْ فِقْرَةً عَنْ فَصْلِ الصَّيْفِ",e:"[C] Write a paragraph about summer: weather, clothes, activities. Use the help words (at least 5).",it:[
+{t:"w",q:"اُكْتُبْ عَنِ الْجَوِّ وَالْمَلَابِسِ وَمَا تُحِبُّ أَنْ تَفْعَلَ.",e:"Write about the weather, the clothes and what you like to do.",
+w:"فَصْلُ الصَّيْفِ – الْجَوُّ حَارٌّ وَمُشْمِسٌ – أَرْتَدِي – مَلَابِسَ خَفِيفَةً وَمُرِيحَةً – قَمِيصًا أَبْيَضَ – بِنْطَالًا أَزْرَقَ – قُبَّعَةً صَفْرَاءَ – نَظَّارَةً شَمْسِيَّةً – أَذْهَبُ مَعَ أُسْرَتِي – الشَّاطِئُ – أَلْعَبُ مَعَ أُخْتِي – كُرَةٌ صَغِيرَةٌ – فِي رَأْيِي أَنَّ – مُمْتِعٌ جِدًّا – لِأَنَّ".split(" – "),
+m:"فَصْلُ الصَّيْفِ مُمْتِعٌ جِدًّا. فِي الصَّيْفِ يَكُونُ الْجَوُّ حَارًّا وَمُشْمِسًا؛ لِذَلِكَ أَرْتَدِي مَلَابِسَ خَفِيفَةً وَمُرِيحَةً. أَرْتَدِي قَمِيصًا أَبْيَضَ وَبِنْطَالًا أَزْرَقَ وَقُبَّعَةً صَفْرَاءَ وَنَظَّارَةً شَمْسِيَّةً. فِي الْعُطْلَةِ أَذْهَبُ مَعَ أُسْرَتِي إِلَى الشَّاطِئِ، وَأَلْعَبُ مَعَ أُخْتِي بِكُرَةٍ صَغِيرَةٍ. فِي رَأْيِي أَنَّ فَصْلَ الصَّيْفِ مُمْتِعٌ جِدًّا لِأَنَّنَا نَلْعَبُ كَثِيرًا.",
+me:"Summer is very enjoyable. In summer the weather is hot and sunny, so I wear light and comfortable clothes. I wear a white shirt, blue trousers, a yellow hat and sunglasses. On holiday I go with my family to the beach, and I play with my sister with a small ball. In my opinion, summer is very enjoyable because we play a lot."}]},
+{h:"[د] اُكْتُبْ فِقْرَةً عَنْ مَلَابِسِكَ الْمُفَضَّلَةِ",e:"[D] Write a paragraph about your favourite clothes, colours, summer and winter, and why. Use the help words (at least 5).",it:[
+{t:"w",q:"اُكْتُبْ عَنْ مَلَابِسِكَ وَأَلْوَانِهَا وَسَبَبِ اخْتِيَارِكَ.",e:"Write about your clothes, their colours and why you chose them.",
+w:"مَلَابِسِي الْمُفَضَّلَةُ – أَنَا أُحِبُّ – أَرْتَدِي – أَلْبَسُ – قَمِيصٌ أَزْرَقُ – بِنْطَالٌ أَسْوَدُ – قُبَّعَةٌ – مِعْطَفٌ – وِشَاحٌ – الْقُطْنُ – الصُّوفُ – فِي الصَّيْفِ – فِي الشِّتَاءِ – خَفِيفَةٌ – ثَقِيلَةٌ – جَمِيلَةٌ وَمُرِيحَةٌ – أَنَا أُفَضِّلُ – لِأَنَّهَا".split(" – "),
+m:"مَلَابِسِي الْمُفَضَّلَةُ قَمِيصٌ أَزْرَقُ وَبِنْطَالٌ أَسْوَدُ. أَنَا أُحِبُّ الْمَلَابِسَ الْجَمِيلَةَ وَالْمُرِيحَةَ. فِي الصَّيْفِ أَرْتَدِي مَلَابِسَ خَفِيفَةً مِنَ الْقُطْنِ وَأَلْبَسُ قُبَّعَةً. وَفِي الشِّتَاءِ أَرْتَدِي مِعْطَفًا ثَقِيلًا وَأَلْبَسُ وِشَاحًا مِنَ الصُّوفِ. أَنَا أُفَضِّلُ مَلَابِسَ الْقُطْنِ لِأَنَّهَا مُرِيحَةٌ جِدًّا.",
+me:"My favourite clothes are a blue shirt and black trousers. I love beautiful and comfortable clothes. In summer I wear light cotton clothes and a hat. In winter I wear a heavy coat and a wool scarf. I prefer cotton clothes because they are very comfortable."}]}]}
+];
+/* ---------- speech ---------- */
+let V=null,on=true,tok=0;
+const pick=()=>{if(!window.speechSynthesis)return;const vs=speechSynthesis.getVoices().filter(v=>/^ar/i.test(v.lang));
+V=vs.find(v=>/hoda|laila|salma|zariyah|amina|sara|mariam|noura|female|هدى|ليلى|سلمى/i.test(v.name))||vs.find(v=>!/maged|majed|tarik|naayf|hamed|\bmale|ماجد|طارق/i.test(v.name))||null};
+if(window.speechSynthesis){pick();speechSynthesis.onvoiceschanged=pick;setTimeout(pick,1800)}
+function say(t,cb){if(!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/▁+/g,"،").replace(/ـ/g,""));
+u.lang="ar-SA";if(V){u.voice=V;u.lang=V.lang}u.rate=.8;u.pitch=1.15;if(cb){u.onend=cb;u.onerror=cb}speechSynthesis.speak(u)}
+const cheer=t=>{if(on)say(t)};
+function readAll(id){const L=[...document.querySelectorAll("#"+id+" .ln")],my=++tok;let i=0;(function nx(){L.forEach(l=>l.classList.remove("hl"));if(my!==tok||i>=L.length)return;L[i].classList.add("hl");say(L[i].dataset.s,()=>{if(my===tok){i++;nx()}})})()}
+function stop(){tok++;speechSynthesis&&speechSynthesis.cancel();document.querySelectorAll(".ln.hl").forEach(l=>l.classList.remove("hl"))}
+/* ---------- build ---------- */
+const ITEMS=[];let score=0;
+const bl=q=>q.replace(/▁+/g,'<span class="bl"></span>');
+const sp=t=>`<button class="sp" data-s="${t}" aria-label="استمع Listen">🔊</button>`;
+function card(it,k){const id=ITEMS.push(it)-1;it.id=id;let x="";
+x+=`<div class="n">${k}</div><div class="qb"><p class="ar">${bl(it.q)}${sp(it.q)}</p><p class="en">${it.e||""}</p></div>`;
+if(it.t==="mc")x+=`<div class="opts">`+it.o.map((o,j)=>{const[a,e]=o.split("=");return `<button class="op" data-o="${j}"><span class="mk"></span>${a}${e?`<span class="oe">${e}</span>`:""}</button>`}).join("")+`</div>`;
+else if(it.t==="in")x+=`<div class="row"><input dir="rtl" aria-label="الإجابة answer" placeholder="اكتب هنا… Type here"><button class="btn" data-a="chk">تحقّق ✔ Check</button><button class="btn alt" data-a="show">الإجابة 👁 Answer</button></div>`;
+else{x+=`<div class="help">`+it.w.map(w=>`<button data-s="${w}">${w}</button>`).join("")+`</div><textarea dir="rtl" aria-label="الفقرة paragraph" placeholder="اكتب فقرتك هنا… Write your paragraph here"></textarea><div class="row"><button class="btn" data-a="chk">تحقّق ✔ Check</button><button class="btn alt" data-a="show">نموذج 👁 Model</button></div><ul class="rub">${RUB.map(r=>`<li>${r}</li>`).join("")}</ul>`}
+x+=`<p class="fb" aria-live="polite"></p>`;
+if(it.m)x+=`<div class="md"><p class="ar">${it.m}${sp(it.m)}</p><p class="en">${it.me||""}</p></div>`;
+return `<div class="q" data-i="${id}">${x}</div>`}
+let total=0;
+const app=document.getElementById("app"),nav=document.getElementById("nav");
+S.forEach((s,si)=>{let h=`<section id="s${si}" style="--c:var(${s.c})">`;
+if(s.p)h+=`<div class="psg" id="p${si}"><h2>${s.i} ${s.p.h}</h2><button class="btn" data-a="all" data-p="p${si}">▶ استمع للفقرة · Listen</button><button class="btn alt" data-a="stop">⏹ توقّف · Stop</button>`+s.p.l.map(l=>`<div class="ln" data-s="${l[0]}"><p class="ar">${l[0]}</p><p class="en">${l[1]}</p></div>`).join("")+`</div>`;
+s.b.forEach(b=>{h+=`<div class="blk"><b>${b.h}</b><span>${b.e}</span></div>`;b.it.forEach((it,k)=>{if(Array.isArray(it)){it=mc(it[0],it[1],[it[2],it[3],it[4]],it[5])}total++;h+=card(it,k+1)})});
+app.insertAdjacentHTML("beforeend",h+`</section>`);
+nav.insertAdjacentHTML("beforeend",`<button style="--c:var(${s.c})" data-t="${si}">${s.i} ${s.n}<small>${s.e}</small></button>`)});
+const upd=()=>{document.getElementById("sc").textContent=`⭐ ${score} / ${total}`;document.getElementById("pg").style.width=(100*score/total)+"%";if(score===total){const d=document.getElementById("dn");d.style.display="block";cheer("أحسنت! لقد أنهيت كل الأسئلة")}};upd();
+function show(i){document.querySelectorAll("section").forEach((s,j)=>s.classList.toggle("on",i===j));nav.querySelectorAll("button").forEach((b,j)=>b.classList.toggle("on",i===j));stop();scrollTo({top:0})}
+show(0);
+function win(c,it,txt){if(!c.classList.contains("ok")){c.classList.add("ok");score++;upd()}}
+document.addEventListener("click",e=>{const t=e.target;
+const tb=t.closest("[data-t]");if(tb){show(+tb.dataset.t);return}
+if(t.closest("#vt")){on=!on;const b=document.getElementById("vt");b.setAttribute("aria-pressed",on);b.textContent=on?"🔊 صوت المعلمة: يعمل · Teacher voice: ON":"🔇 صوت المعلمة: متوقف · Teacher voice: OFF";if(!on)stop();return}
+const sb=t.closest("[data-s]");if(sb&&!sb.classList.contains("ln")||t.closest(".ln")){const el=sb&&!sb.classList.contains("ln")?sb:t.closest(".ln");tok++;say(el.dataset.s);return}
+const ab=t.closest("[data-a]");
+if(ab){const a=ab.dataset.a,c=ab.closest(".q");
+if(a==="all"){readAll(ab.dataset.p);return}if(a==="stop"){stop();return}
+const it=ITEMS[c.dataset.i],fb=c.querySelector(".fb"),md=c.querySelector(".md");
+if(a==="show"){md&&md.classList.add("on");return}
+const v=c.querySelector("input,textarea").value,nv=NW(v);let ok,msg;
+if(it.t==="w"){const n=it.w.filter(w=>nv.includes(NW(w))).length;ok=n>=5&&nv.split(" ").length>=12;
+fb.innerHTML=ok?`✅ مُمْتَاز! اسْتَخْدَمْتَ ${n} كَلِمَاتٍ مُسَاعِدَةً <small>Great! You used ${n} help words.</small>`:`✍️ اسْتَخْدَمْتَ ${n} مِنْ ٥ كَلِمَاتٍ مُسَاعِدَةٍ، وَاكْتُبْ جُمَلًا أَكْثَرَ <small>You used ${n}/5 help words. Write more sentences and try again.</small>`;
+if(ok){md.classList.add("on");win(c);cheer("أحسنت")}else cheer("حاول مرة أخرى");return}
+ok=nv&&(it.a?it.a.some(x=>NW(x)===nv):it.k.every(k=>nv.includes(NW(k))));
+if(ok){fb.innerHTML="✅ إِجَابَةٌ صَحِيحَةٌ! <small>Correct!</small>";md&&md.classList.add("on");win(c);cheer("أحسنت")}
+else{fb.innerHTML="❌ حَاوِلْ مَرَّةً أُخْرَى <small>Not quite — try again, or press Answer.</small>";c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),400);cheer("حاول مرة أخرى")}
+return}
+const op=t.closest(".op");
+if(op){const c=op.closest(".q"),it=ITEMS[c.dataset.i],j=+op.dataset.o,fb=c.querySelector(".fb");if(c.classList.contains("ok"))return;
+if(j===it.c){c.querySelectorAll(".op").forEach(x=>x.disabled=true);op.classList.add("good");op.querySelector(".mk").textContent="✓";
+const full=it.q.replace(/▁+/g,it.o[j].split("=")[0]).replace(/ـ/g,"");
+fb.innerHTML=`✅ أَحْسَنْتَ! إِجَابَةٌ صَحِيحَةٌ <small>Well done! Correct.</small>`+(/▁/.test(it.q)?`<br><span class="ar">${full}</span>`:"");win(c);if(on)say(/▁/.test(it.q)?full:"أحسنت")}
+else{op.classList.add("bad");op.disabled=true;op.querySelector(".mk").textContent="✗";fb.innerHTML="❌ خَطَأ — حَاوِلْ مَرَّةً أُخْرَى <small>Wrong — try again!</small>";c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),400);cheer("حاول مرة أخرى")}}
+});
+</script>
+</body>
+</html>
